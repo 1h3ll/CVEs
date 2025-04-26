@@ -5,6 +5,9 @@
 Privilege Escalation via Blind XSS
 
 **Affected Version(s):** v1.0
+
+**💣Vulnerability Description:**
+
 A stored blind XSS vulnerability exists in the Contact Page of the Medical Card Generation System `mcgs/contact.php`. The name field fails to properly sanitize user input, allowing an attacker to inject malicious JavaScript. This payload is stored in the backend and is executed when an admin views the contact submission, making this a blind XSS scenario from the attacker's perspective.
 ![image](https://github.com/user-attachments/assets/466134f5-2fd5-4e1e-8429-4fbb13aeee37)
 
