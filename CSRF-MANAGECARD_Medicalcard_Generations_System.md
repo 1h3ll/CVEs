@@ -7,7 +7,7 @@ Privilege Escalation via Blind XSS
 **Affected Version(s):** v1.0
 
 **💣Vulnerability Description:**
-A Cross-Site Request Forgery (CSRF) vulnerability exists in the Manage Card functionality (/mcgs/admin/manage-card.php) of the Medical Card Generation System developed by PHPGurukul. The vulnerable endpoint allows an authorized admin to delete medical card records by sending a simple GET request without verifying the origin of the request (missing CSRF token and missing Origin/Referer validation). An attacker can craft a malicious webpage that, when visited by a logged-in admin, will silently trigger the deletion of a medical card record without the admin's knowledge or consent. This compromises the integrity and availability of critical medical data.
+A Cross-Site Request Forgery (CSRF) vulnerability exists in the Manage Card functionality `(/mcgs/admin/manage-card.php)` of the Medical Card Generation System developed by PHPGurukul. The vulnerable endpoint allows an authorized admin to delete medical card records by sending a simple GET request without verifying the origin of the request (missing CSRF token and missing Origin/Referer validation). An attacker can craft a malicious webpage that, when visited by a logged-in admin, will silently trigger the deletion of a medical card record without the admin's knowledge or consent. This compromises the integrity and availability of critical medical data.
 
 **👩‍💻Impact:**
 Unauthorized Medical-Card Detail Deletion.
