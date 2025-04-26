@@ -2,7 +2,7 @@
 [ Medicalcard Generations System](https://phpgurukul.com/medical-card-generation-system-using-php-and-mysql/)
 
 **Vulnerability Type:**
-Privilege Escalation via Blind XSS
+CSRF
 
 **Affected Version(s):** v1.0
 
